@@ -1,4 +1,6 @@
+import { FormDesign, LabelDesign, InputDesign, AddBtn } from "./Form.styled"
 const { Component } = require("react");
+
 
 
 class Form extends Component {
@@ -25,10 +27,10 @@ class Form extends Component {
     
     render() {
         return (
-            <form onSubmit={this.handleSubmit}>
-                <label>
+            <FormDesign onSubmit={this.handleSubmit}>
+                <LabelDesign>
                     Name
-                    <input
+                    <InputDesign
                         type="text"
                         name="name"
                         value={this.state.name}
@@ -37,10 +39,10 @@ class Form extends Component {
                         title="Name may contain only letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan"
                         required
                     />
-                </label>
-                <label>
+                </LabelDesign>
+                <LabelDesign>
                     Number
-                    <input
+                    <InputDesign
                         type="tel"
                         name="number"
                         value={this.state.number}
@@ -49,9 +51,9 @@ class Form extends Component {
                         title="Phone number must be digits and can contain spaces, dashes, parentheses and can start with +"
                         required
                     />
-                </label>
-                <button type="submit">Add contact</button>
-            </form>
+                </LabelDesign>
+                <AddBtn type="submit">Add contact</AddBtn>
+            </FormDesign>
         )
     } 
 };

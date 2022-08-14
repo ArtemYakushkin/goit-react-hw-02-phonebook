@@ -5,7 +5,7 @@ export const Container = styled.div`
 `;
 
 export const Section = styled.section`
-    max-width: 600px;
+    max-width: 300px;
     padding: 15px;
     border: 2px solid #b8b8b8;
     border-radius: 10px;
@@ -16,4 +16,12 @@ export const Section = styled.section`
 export const Title = styled.h1`
     text-align: center;
     color: #8a8a8a;
+    font-family: 'Ubuntu', sans-serif;
+`;
+
+export const TitleContact = styled.h2`
+    color: #8a8a8a;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0px;
+    margin-bottom: 10px;
 `;
